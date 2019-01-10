@@ -1,0 +1,88 @@
+// cards
+
+.cards-container {
+    margin: 0 auto;
+    height: 72%;
+    width: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 3px solid white;
+}
+
+.card-body {
+    border: 1px solid rgba(17,135,69,0.3);
+    text-align: center;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    position: relative;
+    border-bottom-color: white;
+    border-right-color: white;
+    box-shadow: 1px 1px 2px lightgrey;
+    input, select {
+        width: 250px;
+        height: 33px;
+        border: 1px solid rgba(0,0,0,0.5);
+        font-size: 1.1rem;
+    }
+    label {
+        margin-right: 0px;
+        font-size: 0.9rem;
+        border: 1px solid white;
+        padding: 7px 12px 4.85px;
+        margin-right: 3px
+    }
+}
+
+.card-body:hover {
+    background: rgba(255,255,255,0.4);
+    border: 1px solid black;
+    label {
+        border-color: forestgreen;
+        background: linear-gradient(to bottom left, $gray, $white);
+        color: $black;
+    }
+    input, select {
+        border-color: forestgreen;
+    }
+}
+
+.card1 {
+    margin-top: 0;
+}
+
+.contactTypeDiv {
+    margin-bottom: 5px;
+}
+
+.locationDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid white;
+    background: rgba(0,0,0,0.75);
+}
+
+.locationNumber {
+    padding: 0 10px;
+    background: $silver;
+    color: white;
+    margin: 3px 0;
+    font-size: 0.8rem;
+}
+
+select { width: 400px; text-align-last:center; }
+
+select:hover {
+    background: rgba(17, 135, 69, 0.7);
+    color: #fff;
+    border: 1px solid white;
+}
+
+.contactCuid {  text-align: center; }
+

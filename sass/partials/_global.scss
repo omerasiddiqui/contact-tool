@@ -1,0 +1,47 @@
+//imports
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto');
+
+// variables
+
+// fonts
+$heading-font: 'Fira Sans', sans-serif;
+$body-font: 'Roboto', sans-serif;
+// colors
+$primary-color: #118745;
+$secondary-color: #8DC643;
+$alt-color: #1C8B4E;
+$black: #111111;
+$white: #FFFFFF;
+$navy: #001f3f;
+$blue: #0074D9;
+$aqua: #7FDBFF;
+$teal: #39CCCC;
+$olive: #3D9970;
+$green: #2ECC40;
+$lime: #01FF70;
+$yellow: #FFDC00;
+$orange: #FF851B;
+$red: #FF4136;
+$maroon: #85144b;
+$fuchsia: #F012BE;
+$purple: #B10DC9;
+$gray: #AAAAAA;
+$silver: #DDDDD;
+
+
+/* media breakpoints */
+$small-screen : 450px;
+$medium-screen : 775px;
+$large-screen: 850px;
+
+@media (max-width: $large-screen) {
+
+}
+
+@media (max-width: $medium-screen) {
+    
+}
+
+@media (max-width: $small-screen) {
+    
+}

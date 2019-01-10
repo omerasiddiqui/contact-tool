@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="node_modules\beefup\dist\css\demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Update Portal</title>
+</head>
+<body>
+
+    <!-- ajax loading gif -->
+	<div id="loading"></div>
+
+    <!-- navbar -->
+	<div class="navbar-div">
+		<nav class="row">
+			<div>
+				<img src="assets/images/ctl_new.png" width="100" height="50">
+			</div>
+			<div>
+				<h1 class="header-title">Contact Update Portal</h1>
+			</div>
+			<div class="navbar-right">
+				<h3 class="user">
+					<span>&nbsp;&nbsp;${user}</span>
+                </h3>
+                <a href="#"><h3 class="logout">
+                        <span>&nbsp;&nbsp;logout</span>
+                </h3></a>
+			</div>
+		</nav>
+    </div>
+    
+    <!-- order input div -->
+    <div class="orderIdDiv">
+        <label class="label" for="orderId">Sales Order ID: </label>
+        <input type="text" name="orderId" id="orderId">
+        <div class="searchBtn-wrapper">
+            <button class="searchBtn">Search</button>
+            <button class="resetBtn">Reset</button>
+        </div>
+    </div>
+
+        <!-- main starts -->
+    <div class="cards-container">
+
+        <div class="tabbedContent">
+            <div class="tab-item">
+                <button class="ubi active">UBI</button>
+            </div>
+            <div class="tab-item">
+                <button class="eng">ENGINEERING</button>
+            </div>
+        </div>
+
+       
+       <div class="contacts">
+        <!-- content coming from js -->
+       </div>
+    </div>
+    <!-- main ends -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js\jquery-ui.min.js"></script>
+<script src="js/response.js"></script>
+<script src="node_modules\beefup\dist\js\jquery.beefup.min.js"></script>
+<!-- <script src="js/main.js"></script> -->
+<script> $(function() { $('.beefup').beefup({selfClose: true,
+        scroll: true,
+        scrollOffset: -10, 
+        openSingle: true}); });</script>
+</body>
+</html>

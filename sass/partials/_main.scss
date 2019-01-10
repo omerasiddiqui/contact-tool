@@ -1,0 +1,274 @@
+.orderIdDiv {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+#orderId {
+    height: 33px;
+    text-align: center;
+    width: 240px;
+    font-size: 1.3rem;
+}
+
+.label {
+    margin-right: 0px;
+    font-size: 1rem;
+    border: 1px solid white;
+    padding: 8px 12px 3px;
+    margin-right: 3px;
+    font-family: "Fira Sans", sans-serif
+}
+
+ul > li {
+    border: 1PX SOLID white;
+    padding: 3px 6px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.cards-container input[type=text] {
+    border: 1px solid white;
+    width: 327px;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255,255,255, 0.3);
+    border-radius: 25px;
+}
+
+.beefup__body {
+    font-size: 0.9rem;
+    margin: 0px 15% 2%;
+    line-height: 2;
+    background: rgba(128,128,128,0.35);
+    color: white;
+    padding: 1% 2%;
+    border-radius: 0 0 5px 5px;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.header-ul li:nth-of-type(odd) {
+    width: 120px;
+    background: rgba(128,128,128,0.25);
+}
+
+.header-name {
+    width: 225px;
+}
+
+.header-email {
+    width: 350px;
+}
+
+.header-type {
+    width: 150px;
+}
+
+.beefup:nth-of-type(1) {
+    
+}
+
+.people {
+    width: 1390px;
+    li {
+        transition: 0.2s ease;
+    }
+    &:hover {
+        li {
+            background: #0DA462;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.searchBtn-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.searchBtn, .resetBtn {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    border: 1px solid white;
+    padding: 12px 18px 8px;
+    margin-right: 3px;
+    margin-left: 5px;
+    font-family: $heading-font;
+    font-weight: bold;
+    font-size: 18px;
+    background: white;
+    color: $alt-color;
+    transition: 0.3s ease;
+    cursor: pointer;
+    width: 11.5rem;
+    outline: none;
+    box-shadow: 2px 2px 1px grey;
+    border-radius: 3px;
+    &:hover {
+        background: lighten($alt-color, 5);
+        color: white;
+    }
+}
+
+.resetBtn {
+    background: lighten($red, 8.5);
+    color: white;
+    &:hover {
+        background: $red;
+    }
+}
+
+.body-item .label {
+    display: inline-block;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-item {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.inputs-group {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    width: 78%;
+}
+
+.body-left  {
+    margin-right: 2.3rem;
+}
+
+.cards-container {
+    position: relative;
+}
+
+.tabbedContent {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 15;
+}
+
+.tab-item:nth-of-type(1) {
+    margin-right: 5px;
+}
+
+.ubi, .eng, .addContact {
+    font-size: 1rem;
+    padding: 10px 4px;
+    padding-bottom: 10px;
+    width: 135px;
+    border-radius: 0 0 10px 10px;
+    background: white;
+    color: black;
+    box-shadow: 2px 1px 0 0 darkgrey;
+    outline: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.ubi:hover, .eng:hover {
+    background: lighten($primary-color, 5);
+    color: white;
+}
+
+.ubi:active, .eng:active {
+    box-shadow: 2px 1px 0 0 transparent;
+}
+
+.addContactDiv {
+    position: absolute;
+    top: 0;
+    right: 15;
+}
+
+.addContact {
+    background: $primary-color;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.addContact:hover {
+    background: lighten($primary-color, 5);
+}
+
+.contacts {
+    height: 100%;
+}
+
+.location-header {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 695px;
+    background: lighten($primary-color, 10);
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.location-header:hover {
+    border-color: grey;
+    background: lighten($primary-color, 7)
+}
+
+@keyframes accordion {
+    0% {}
+    50% {}
+    100% {}
+}
+
+.locationHeaderDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        margin-bottom: 0;
+        width: 525px;
+    }
+}
+
+#chevron {
+    width: 5%;
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.active {
+    background: lighten($primary-color, 5);
+    color: white;
+}

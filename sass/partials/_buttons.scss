@@ -1,0 +1,77 @@
+// add & subtract icons
+
+.buttons img {
+    width: 100%;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
+
+.plus, .minus {
+    width: 45%;
+    padding: 0;
+    border: none;
+    background: black;
+    border: 2px solid black;
+}
+
+.plus:hover, .minus:hover {
+    border-color: blue;
+    cursor: pointer;
+}
+
+// submit & clear buttons
+
+.submitDiv {
+    margin-bottom: 0.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1% 0 0;
+}
+
+.update, .delete {
+    font-family: $heading-font;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 3%;
+    background: white;
+    color: $alt-color;
+    z-index: 20;
+    transition: 0.3s ease;
+    width: 10rem;
+}
+
+.update {
+    margin-right: 15px;
+    background: white;;
+    color: lighten($alt-color, 2);
+    &:hover {
+        background: lighten($alt-color, 2);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.delete {
+    background: $red;
+    color: white;
+    transition: 0.3s ease;
+    &:hover {
+        background: lighten($red, 7);
+        cursor: pointer;
+    }
+}
+
+
