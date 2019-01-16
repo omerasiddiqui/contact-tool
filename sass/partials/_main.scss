@@ -167,13 +167,19 @@ ul > li {
 
 .tabbedContent {
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 15;
+    justify-content: flex-start;
+    height: 35px;
+    width: 100%;
+    margin-top: -2px;
+}
+
+.tab-item {
+    height: 35px;
 }
 
 .tab-item:nth-of-type(1) {
-    margin-right: 5px;
+    margin-left: 20px;
+    margin-right : 5px;
 }
 
 .ubi, .eng, .addContact {
@@ -271,4 +277,18 @@ ul > li {
 .active {
     background: lighten($primary-color, 5);
     color: white;
+}
+
+.dataTables_wrapper {
+    zoom: 1.15;
+}
+
+#example_wrapper {
+    margin-top: 45px;
+    height: 100%;
+}
+
+table.dataTable>tbody>tr.child ul li:last-child {
+    padding: 6px 4px;
+    border-bottom: 1px solid #efefef;
 }

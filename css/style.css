@@ -170,9 +170,6 @@ summary {
   width: 95%;
   max-width: 1080px; }
 
-body, label, input {
-  font-size: 62.5%; }
-
 ul {
   list-style: none;
   margin: 0;
@@ -224,7 +221,7 @@ body {
     color: black; }
 
 .header-title {
-  font-size: 3.5em;
+  font-size: 40px;
   border-bottom: 2px solid #118745;
   text-shadow: 1px 1px 1px #FFFFFF;
   margin-left: 20px;
@@ -381,11 +378,16 @@ ul > li {
 
 .tabbedContent {
   display: flex;
-  position: absolute;
-  top: 0;
-  left: 15; }
+  justify-content: flex-start;
+  height: 35px;
+  width: 100%;
+  margin-top: -2px; }
+
+.tab-item {
+  height: 35px; }
 
 .tab-item:nth-of-type(1) {
+  margin-left: 20px;
   margin-right: 5px; }
 
 .ubi, .eng, .addContact {
@@ -470,10 +472,22 @@ ul > li {
   background: #149e51;
   color: white; }
 
+.dataTables_wrapper {
+  zoom: 1.15; }
+
+#example_wrapper {
+  margin-top: 45px;
+  height: 100%; }
+
+table.dataTable > tbody > tr.child ul li:last-child {
+  padding: 6px 4px;
+  border-bottom: 1px solid #efefef; }
+
 .cards-container {
   margin: 0 auto;
-  height: 72%;
+  height: 100%;
   width: 90%;
+  max-width: 1215px;
   overflow-y: scroll;
   overflow-x: hidden;
   border: 3px solid white; }
