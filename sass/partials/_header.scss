@@ -22,7 +22,7 @@ body {
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 0;
+    margin-bottom: 40px;
     h1, h3 {
         margin-top: 0;
         margin-bottom: 0;
@@ -37,14 +37,24 @@ body {
     justify-content: space-between;
     a {
         color: black;
+        &:hover {
+            text-decoration: none;
+        }
     }
+}
+
+label[for="orderId"] {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    text-shadow: 1px 1px 1px black;
 }
 
 .header-title {
     font-size: 40px;
     border-bottom: 2px solid $primary-color;
     text-shadow: 1px 1px 1px $white;
-    margin-left: 20px;
+    margin-left: 33px;
     padding-left: 11px;
     padding-right: 11px;
 }
@@ -52,12 +62,13 @@ body {
 .user, .logout {
     text-align: center;
     transition: 0.2s ease;
-    font-size: 1rem;
+    font-size: 2rem;
     border-bottom: 1px solid $primary-color;
+    padding-bottom: 2px;
 }
 
 .user {
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 .logout:hover {

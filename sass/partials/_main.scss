@@ -44,6 +44,16 @@ ul > li {
     flex-direction: column;
     background: rgba(255,255,255, 0.3);
     border-radius: 25px;
+    position: relative;
+
+    margin: 0 auto;
+    height: 100%;
+    max-height: 700px;
+    width: 90%;
+    max-width: 1215px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border: 3px solid white;
 }
 
 .beefup__body {
@@ -127,7 +137,7 @@ ul > li {
 }
 
 .resetBtn {
-    background: lighten($red, 8.5);
+    background: lighten($red, 12.5);
     color: white;
     &:hover {
         background: $red;
@@ -159,10 +169,6 @@ ul > li {
 
 .body-left  {
     margin-right: 2.3rem;
-}
-
-.cards-container {
-    position: relative;
 }
 
 .tabbedContent {
@@ -286,9 +292,59 @@ ul > li {
 #example_wrapper {
     margin-top: 45px;
     height: 100%;
+    width: 95%;
 }
 
 table.dataTable>tbody>tr.child ul li:last-child {
     padding: 6px 4px;
     border-bottom: 1px solid #efefef;
+}
+
+table.dataTable>tbody>tr.child:hover {
+    background: rgba(53, 176, 22, 0.5) !important;
+}
+
+tfoot {
+    display: none;
+}
+
+table {
+    font-size: 1.2rem;
+}
+
+.tabulator-row input[type=text] {
+    font-size: 1.5rem;
+    outline-color: white;
+    border-color: white;
+    font-weight: bold;
+    background: rgba(12,148,12,0.5);;
+}
+
+.tabulator-row.tabulator-selectable:hover {
+    background: rgba(12,148,12,0.45);
+}
+
+.tabulator {
+    width: 90%;
+    margin-top: 40px;
+}
+
+.tabulator-col-title {
+    background: $primary-color;
+    color: white;
+}
+
+.tabulator-col-content {
+    background: darken($primary-color, 2)
+}
+
+#swal2-content input {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.modal-label {
+    margin-bottom: 3px;
+    color: $primary-color;
+    font-weight: bold;
 }

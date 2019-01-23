@@ -207,7 +207,7 @@ body {
   align-items: center;
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 0; }
+  margin-bottom: 40px; }
   .navbar-div h1, .navbar-div h3 {
     margin-top: 0;
     margin-bottom: 0; }
@@ -219,23 +219,32 @@ body {
   justify-content: space-between; }
   .navbar-right a {
     color: black; }
+    .navbar-right a:hover {
+      text-decoration: none; }
+
+label[for="orderId"] {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  text-shadow: 1px 1px 1px black; }
 
 .header-title {
   font-size: 40px;
   border-bottom: 2px solid #118745;
   text-shadow: 1px 1px 1px #FFFFFF;
-  margin-left: 20px;
+  margin-left: 33px;
   padding-left: 11px;
   padding-right: 11px; }
 
 .user, .logout {
   text-align: center;
   transition: 0.2s ease;
-  font-size: 1rem;
-  border-bottom: 1px solid #118745; }
+  font-size: 2rem;
+  border-bottom: 1px solid #118745;
+  padding-bottom: 2px; }
 
 .user {
-  margin-right: 5px; }
+  margin-right: 15px; }
 
 .logout:hover {
   border-color: #FFFFFF; }
@@ -280,7 +289,16 @@ ul > li {
   align-items: center;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 25px; }
+  border-radius: 25px;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  max-height: 700px;
+  width: 90%;
+  max-width: 1215px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  border: 3px solid white; }
 
 .beefup__body {
   font-size: 0.9rem;
@@ -345,7 +363,7 @@ ul > li {
     color: white; }
 
 .resetBtn {
-  background: #ff6a61;
+  background: #ff7d76;
   color: white; }
   .resetBtn:hover {
     background: #FF4136; }
@@ -372,9 +390,6 @@ ul > li {
 
 .body-left {
   margin-right: 2.3rem; }
-
-.cards-container {
-  position: relative; }
 
 .tabbedContent {
   display: flex;
@@ -477,20 +492,51 @@ ul > li {
 
 #example_wrapper {
   margin-top: 45px;
-  height: 100%; }
+  height: 100%;
+  width: 95%; }
 
 table.dataTable > tbody > tr.child ul li:last-child {
   padding: 6px 4px;
   border-bottom: 1px solid #efefef; }
 
-.cards-container {
-  margin: 0 auto;
-  height: 100%;
+table.dataTable > tbody > tr.child:hover {
+  background: rgba(53, 176, 22, 0.5) !important; }
+
+tfoot {
+  display: none; }
+
+table {
+  font-size: 1.2rem; }
+
+.tabulator-row input[type=text] {
+  font-size: 1.5rem;
+  outline-color: white;
+  border-color: white;
+  font-weight: bold;
+  background: rgba(12, 148, 12, 0.5); }
+
+.tabulator-row.tabulator-selectable:hover {
+  background: rgba(12, 148, 12, 0.45); }
+
+.tabulator {
   width: 90%;
-  max-width: 1215px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  border: 3px solid white; }
+  margin-top: 40px; }
+
+.tabulator-col-title {
+  background: #118745;
+  color: white; }
+
+.tabulator-col-content {
+  background: #107e40; }
+
+#swal2-content input {
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.modal-label {
+  margin-bottom: 3px;
+  color: #118745;
+  font-weight: bold; }
 
 .card-body {
   border: 1px solid rgba(17, 135, 69, 0.3);
