@@ -1,6 +1,10 @@
 let contacts = $('.contacts'), counter = 1, counterLocations = 1;
+var responseData = [];
+var temp = [];
+
 
 $(document).ready(function () {
+  var swal1 = $("#swal-input1").val(), swal2 = $("#swal-input2").val(), swal3 = $("#swal-input3").val(), swal4 = $("#swal-input4").val(), swal5 = $("#swal-input5").val(), swal6 =$("#swal-input6").val();
   //create Tabulator on DOM element with id "example-table"
   var table = new Tabulator("#example-table", {
     height: 1000, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
@@ -44,7 +48,12 @@ $(document).ready(function () {
         `<input id="swal-input5" class="swal2-input" value="${contact.officePhoneNumber}">` +
         `<label class='modal-label'>Availability</label>` +
         `<input id="swal-input6" class="swal2-input" value="${contact.methodOfAvailability}">`,
+        // `<label class='modal-label'>Contact Types</label>`,
+        // `<input type="checkbox" id="swal-input7" class="swal2-input" name="contactType"` +
+        // `<label for="contactType">${contact.contactType}</label>`,
       focusConfirm: false,
+      showCancelButton: true,
+      allowOutsideClick: false,
       preConfirm: () => {
         return [
           // return array of values from edit contact modal
@@ -79,6 +88,12 @@ $(document).ready(function () {
 
         table.setData(responseData)
         console.log(updatedContact);
+        }).then(dat => {
+          Swal.fire({
+            title: "Success",
+            text: "Contact Updated",
+            type: "success"
+          })
         })
 
       
@@ -102,11 +117,17 @@ $("#reset").click(function(){
   table.setData(tabledata);
 });
 
-var responseData = [];
+// loop through array
+// find matching contact names and their contact types
+// 
+
 
   // button click events
 
   $('.searchBtn').on("click", function () {
+    // var salesOrderId = $('#orderId').val();
+    // var url = `http://localhost:8080/rest/getContactListBasedOnSalesOrderIdUsingPOST/${salesOrderId}`
+
     $.ajax({
       url: 'http://localhost:3002/',
       method: 'GET',
@@ -121,9 +142,35 @@ var responseData = [];
           var contactInfo = item.contactInfo;
           // push the contact object into responseData array
           responseData.push(contactInfo);
+
+          // loop through the array
+          // grab index[i].contactName and push into temp array 
+          // create object in objData as = {contactName: string, contactTypes: []};
+
+          // check each remaining index to see if it's contactName matches temp[0]
+          // if it matches the contactNames then push the contactType into the objData array 
+          // if it doesnt match then create a new object in the array
+
+          
+
+
+
+        })
+
+        responseData.forEach(function(item) {
+          var name = item.contactName;
+          var contactType = item.contactType;
+
+          console.log(name)
+          if(!temp.includes(name)) {
+            temp.push(name)
+          } else {
+            console.log(name)
+          }
+         
         })
     
-        console.log(responseData)
+        console.log(temp)
     
       },
       error: function (err) {

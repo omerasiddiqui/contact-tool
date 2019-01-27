@@ -45,7 +45,7 @@ ul > li {
     background: rgba(255,255,255, 0.3);
     border-radius: 25px;
     position: relative;
-
+    box-shadow: 8px 8px 10px grey;
     margin: 0 auto;
     height: 100%;
     max-height: 700px;
@@ -189,7 +189,7 @@ ul > li {
 }
 
 .ubi, .eng, .addContact {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 10px 4px;
     padding-bottom: 10px;
     width: 135px;
@@ -347,4 +347,13 @@ table {
     margin-bottom: 3px;
     color: $primary-color;
     font-weight: bold;
+}
+
+.swal2-popup .swal2-styled.swal2-confirm {
+    background-color: lighten($primary-color, 5) !important;
+    transition: 0.25s ease;
+}
+
+.swal2-popup .swal2-styled.swal2-confirm:hover {
+    background-color: $primary-color !important;
 }
